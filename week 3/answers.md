@@ -9,4 +9,7 @@
     h. By using correlation, it is possible to detect patterns or templates in an image by comparing them to a reference template. Convolution, on the other hand, is widely used for applying filters to images, such as blurring, sharpening, edge detection, and feature extraction.
 
 2. solve a neumerical problem on backpropagation
-    
+    answer given as a pdf document containing the answer in this repository
+
+3. prove that the derivative of the sigmoid function f(x)=f(x)(1-f(x))
+    answer given as a pdf document containing the answer in this repository
