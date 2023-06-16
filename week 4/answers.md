@@ -34,7 +34,7 @@
 
         a. Sigmoid:
 
-                The sigmoid function is defined as $ f(x)= 1/{1+exp{^x}}.
+                The sigmoid function is defined as $ f(x)= 1/{1+exp{^x}}$.
 
                 it squaches the input to a range between 0 and 1.
 
