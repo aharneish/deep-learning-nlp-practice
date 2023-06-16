@@ -133,6 +133,31 @@
 
 4. Why are neural networks with skip connections known as Residual networks?
 
-* 
+Neural networks with skip connections are called Residual Networks (ResNets) because they utilize residual learning. Residual learning refers to the concept of learning the difference (residual) between the input and desired output of a layer. Traditional neural networks struggle to optimize deep layers due to the vanishing gradient problem. ResNets address this by introducing skip connections that allow information to bypass layers. By learning the residuals, the network focuses on refining learned features rather than starting from scratch. This approach overcomes the vanishing gradient problem and enables training of very deep networks. ResNets have had a significant impact on deep learning, particularly in computer vision tasks, by improving performance in areas such as image classification and object detection.
 
 5. Understand the Resnet and Inception Architectures?
+
+   * ResNet (Residual Network):
+        
+        ResNet is a deep convolutional neural network architecture introduced in 2015. It addresses the challenge of training very deep networks by introducing skip connections or shortcuts that allow information to bypass certain layers. This concept of residual learning enables the network to learn residual mappings, capturing the differences between the input and desired output. 
+
+        Skip Connections: ResNet uses skip connections, also known as residual connections, to propagate information from earlier layers directly to deeper layers. By adding the input of a layer to its output, ResNet allows for the learning of residual mappings.
+
+        Identity Mapping: ResNet promotes the use of identity mappings in skip connections, where the input is added directly to the output. This facilitates the learning of residual functions and makes it easier to optimize deep networks.
+        
+        Bottleneck Architectures: ResNet employs bottleneck architectures, consisting of 1x1 convolutions followed by 3x3 convolutions. This design reduces computational complexity while maintaining performance.
+        
+        Variants: ResNet has several variants, including ResNet-50, ResNet-101, and ResNet-152, which differ in the number of layers. These variants provide a trade-off between depth, accuracy, and computational complexity.
+        
+        ResNet's skip connections and residual learning approach have significantly advanced the training of deep neural networks, allowing for the successful training of networks with hundreds of layers.
+
+    * Inception (GoogLeNet):
+        Inception, also known as GoogLeNet, is a deep convolutional neural network architecture introduced in 2014. It is known for its efficient use of computational resources by incorporating multi-scale feature extraction through parallel convolutional operations.
+        
+        Inception Modules: Inception architecture uses Inception modules, which consist of multiple parallel convolutional operations of different filter sizes. These operations capture information at different scales and provide a rich set of features.
+
+        1x1 Convolutions: Inception modules include 1x1 convolutions, which are used to reduce the dimensionality of the input. These 1x1 convolutions help reduce computational complexity and facilitate information flow across different scales.
+    
+        Feature Concatenation: The outputs of different parallel operations in Inception modules are concatenated along the channel dimension, creating a feature map with diverse information from different scales.
+
+        Auxiliary Classifiers: Inception architecture includes auxiliary classifiers at intermediate layers to combat the vanishing gradient problem. These classifiers introduce additional supervision during training and provide gradients to lower layers.
