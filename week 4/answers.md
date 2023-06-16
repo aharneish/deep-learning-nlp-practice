@@ -48,3 +48,51 @@
 
                     * Sigmoid activations suffer from the "vanishing gradient" problem. For very large or small inputs, the gradient becomes close to zero, leading to slow learning in deep networks.
                     * The output is not zero-centered, which can cause issues in network convergence.
+
+        b. Tanh:
+            
+            * The hyperbolic tangent function, tanh(x), is similar to the sigmoid function but maps the input to a range between -1 and 1. 
+            
+            * Pros:
+
+                * Like the sigmoid function, tanh provides a smooth gradient.
+                
+                * It is zero-centered, making it more convenient for optimization algorithms.
+            
+            * Cons:
+
+                * Tanh activations also suffer from the vanishing gradient problem.
+                
+                * The output range is limited, which can result in slower convergence.
+            
+        c. ReLU (Rectified Linear Unit):
+                
+                * The rectified linear unit, ReLU(x) = max(0, x), is a popular activation function used in many deep neural networks. 
+
+                * Pros:
+
+                    * ReLU is computationally efficient to compute and allows for faster training compared to sigmoid and tanh.
+                    
+                    * It overcomes the vanishing gradient problem as it does not saturate for positive inputs.
+                    
+                    * ReLU activations provide sparsity in the network, as they zero out negative values.
+                * Cons:
+
+                    * The gradient for negative inputs is zero, which can cause "dying ReLU" issues where neurons become inactive and stop learning.
+                    
+                    * ReLU outputs are not bounded, which may result in exploding gradients during training.
+        d. Leaky ReLU:
+                
+                *he Leaky ReLU is an extension of the ReLU function that addresses the dying ReLU problem. It introduces a small slope for negative inputs. Mathematically, it is defined as f(x) = max(ax, x), where a is a small constant. 
+                
+                * Pros:
+
+                    *Leaky ReLU mitigates the dying ReLU problem by allowing small negative gradients for negative inputs.
+                    
+                    * It maintains the computational efficiency of ReLU.
+                
+                * Cons:
+
+                    * Choosing the right slope parameter can be challenging, as it can impact the network's performance.
+                    
+                    * The output range is not bounded, which can result in exploding gradients.
