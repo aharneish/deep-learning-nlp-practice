@@ -34,7 +34,7 @@
 
         a. Sigmoid:
 
-                The sigmoid function is defined as $ f(x)= 1/{1+exp{^x}}  $.
+                The sigmoid function is defined as f(X)=1/(1+e^x).
 
                 it squaches the input to a range between 0 and 1.
 
@@ -136,6 +136,7 @@
 Neural networks with skip connections are called Residual Networks (ResNets) because they utilize residual learning. Residual learning refers to the concept of learning the difference (residual) between the input and desired output of a layer. Traditional neural networks struggle to optimize deep layers due to the vanishing gradient problem. ResNets address this by introducing skip connections that allow information to bypass layers. By learning the residuals, the network focuses on refining learned features rather than starting from scratch. This approach overcomes the vanishing gradient problem and enables training of very deep networks. ResNets have had a significant impact on deep learning, particularly in computer vision tasks, by improving performance in areas such as image classification and object detection.
 
 5. Understand the Resnet and Inception Architectures?
+<<<<<<< HEAD
 
    * ResNet (Residual Network):
         
@@ -161,3 +162,5 @@ Neural networks with skip connections are called Residual Networks (ResNets) bec
         Feature Concatenation: The outputs of different parallel operations in Inception modules are concatenated along the channel dimension, creating a feature map with diverse information from different scales.
 
         Auxiliary Classifiers: Inception architecture includes auxiliary classifiers at intermediate layers to combat the vanishing gradient problem. These classifiers introduce additional supervision during training and provide gradients to lower layers.
+=======
+>>>>>>> 5a9a7af7f2861486dcdd125336c8e86b9b365d50
