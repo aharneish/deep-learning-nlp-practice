@@ -26,4 +26,25 @@
 
             * Transfer Learning: VGGNet has been widely adopted for transfer learning due to its pre-trained models. By using pre-trained weights on large-scale datasets, VGGNet models can be fine-tuned for specific tasks with limited data.
 
-2. Explore differnent activation functions. What are the pros and cons of different activation functions
+2. Explore differnent activation functions. What are the pros and cons of different activation functions.
+
+    * Activation functions play a crucial role in neural networks by introducing non-linearity and enabling the network to learn complex patterns from the input data.
+
+     * The most commonly used activations functions are:
+
+        a. Sigmoid:
+
+                The sigmoid function is defined as $ f(x)= 1/{1+exp{^x}}.
+
+                it squaches the input to a range between 0 and 1.
+
+                * pros: 
+
+                    * It provides a smooth gradient, making it suitable for gradient-based optimization algorithms.
+                    
+                    * It can be interpreted as a probability, making it useful for binary classification problems.
+                
+                * cons:
+
+                    * Sigmoid activations suffer from the "vanishing gradient" problem. For very large or small inputs, the gradient becomes close to zero, leading to slow learning in deep networks.
+                    * The output is not zero-centered, which can cause issues in network convergence.
