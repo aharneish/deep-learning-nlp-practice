@@ -96,3 +96,43 @@
                     * Choosing the right slope parameter can be challenging, as it can impact the network's performance.
                     
                     * The output range is not bounded, which can result in exploding gradients.
+
+3. Explain in detail Vanishing and Exploding gradient problems.
+
+* Vanishing gradients problem occurs when the gradients propagated backward through the network during training become extremely samll. As a result the weights are updated at a slower rate leading to slower learning or no learning at all. This is observed in networks with many layers.
+
+* The causes:
+
+    * Activation Functions: Sigmoid and tanh functions have saturated regions where the gradients approach 0. When these functions are used in deep networks, the gradients can rapidly diminish as they propagate backwards.
+
+    * Deep network architectures:  As the gradients are multiplied through each layer during backpropagation, they can shrink exponentially if the weights and activations are in the range where the derivative is close to zero.
+
+    * Weight Initialization: Poor initialization of the weights, such as small random values, can exacerbate the vanishing gradients problem.
+
+* how do we mitigate this problem: 
+
+    * we can use different activation functions such as ReLU and its variants to help mitigate this problem.
+
+    * we can also use different weight initialization strategies suxh as Xavier or He initialization.
+
+* The exploding gradients problem occurs when the gradients propagated backward through the network become extremely large. This issue leads to unstable training dynamics and makes it difficult for the optimization algorithm to find an optimal solution. Exploding gradients can cause numerical instability and prevent the network from converging.
+
+* The causes:
+    
+    * Unstable Weight Updates: If the weights of the network are too large or initialized improperly, the gradients can grow exponentially during backpropagation, resulting in exploding gradients.
+
+    * Deep Network Architecture: In networks with many layers, the gradients can accumulate and magnify as they propagate backward, particularly if the weights are not properly scaled.
+
+* how do we mitigate this problem:
+
+    * Gradient Clipping: Gradient clipping is a technique used to limit the magnitude of gradients during training. By setting a threshold value, gradients that exceed the threshold are scaled down, effectively preventing them from exploding.
+
+    * Weight Regularization: Techniques like L1 or L2 regularization can help control the magnitude of weights and gradients, reducing the likelihood of exploding gradients.
+
+    * Batch Normalization: Batch normalization, applied between layers, helps mitigate the exploding gradients problem by normalizing the activations and controlling the scale of the gradients.
+
+4. Why are neural networks with skip connections known as Residual networks?
+
+* 
+
+5. Understand the Resnet and Inception Architectures?
