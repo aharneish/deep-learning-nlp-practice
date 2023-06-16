@@ -1,4 +1,5 @@
 1. Explore AlexNet, VGGnet architectures
+    
     AlexNet:
         AlexNet is a pioneering convolutional neural network (CNN) architecture that gained significant attention when it won the ImageNet Large Scale Visual Recognition Challenge in 2012. It consists of eight layers, including five convolutional layers and three fully connected layers. Here's a breakdown of its key components:
             * Convolutional Layers: The convolutional layers in AlexNet perform the main feature extraction. They use small filters with different depths and sizes to convolve across the input image and generate feature maps. The depths of the convolutional layers increase as the network goes deeper, allowing for the extraction of increasingly complex features.
