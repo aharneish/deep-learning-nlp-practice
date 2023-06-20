@@ -33,3 +33,9 @@
    * The input layer **x** recieves and processes the neural network's input before passing it onto the middle layer.
 
    * Multiple hidden layers can be found in the middle layer __h__, each with its own activation functions, weights, and biases.
+
+   * The basic issues with RNNs are:
+
+         1. exploding gradients
+
+         2. vanishing gradients.
