@@ -20,13 +20,13 @@
 
    * There can be:
 
-         * one to one
+         1. one to one
 
-         * one to many
+         2. one to many
 
-         * many to one
+         3. many to one
 
-         * many to many
+         4. many to many
 
    * The information in the recurrent neural networks cycles through a loop to the meiddle hidden layer.
 
