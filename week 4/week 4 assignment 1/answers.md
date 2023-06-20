@@ -12,4 +12,5 @@
 
    * RNNs have a Memory that stores all information about the calculations. It employs the same settings for each input since it produces the same outcome by performing the same task on all inputs or hidden layers.
 
-   ![Alt rnn](./rnn2.png)
+   ![rnn1](https://github.com/aharneish/deep-learning-nlp-practice/assets/99192645/e6cea05e-1ba2-400d-85e0-7646494c528e)
+![rnn2](https://github.com/aharneish/deep-learning-nlp-practice/assets/99192645/07f1d71b-fdcf-4453-801d-af64d6d50b7e)
