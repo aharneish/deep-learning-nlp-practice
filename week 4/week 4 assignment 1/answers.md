@@ -39,3 +39,29 @@
          1. exploding gradients
 
          2. vanishing gradients.
+
+2. Understand CBOW and Skip-Gram.
+
+   * CBOW (Continious Bag Of Words) and Skip-Gram are popular alogrithms in Natural Language Processing for generating word embeddings.
+
+   * They are part of the Word2Vec framework.
+
+   * CBOW predicts a target word based on its surrounding context word.
+
+      * Input: Given a target word CBOW takes a fixed number of context words as input
+
+      * Embedding layer: Each context word is converted into a dense vector representation.
+
+      * Aggregation: The word embeddings of the context words are averaged or summed to create a single context vector.
+
+      * Output: The context vector is used as input to a softmax layer which predicts the target word.
+
+   * CBOW is computationally efficient and tends to work well for frequent words and when the dataset is large. However, it may not capture rare word representations effectively.
+
+   * Skip-Gram, in contrast to CBOW, predicts the context words given a target word. 
+
+      * Input: Given a target word, Skip-Gram takes the target word's embedding as input.
+
+      * Output: The target word embedding is fed into a softmax layer, which predicts the probability distribution of the context words.
+
+   * Skip-Gram is more effective for capturing semantic relationships and performing well with rare words, but it can be computationally expensive compared to CBOW.
